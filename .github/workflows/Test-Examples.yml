@@ -28,7 +28,7 @@ jobs:
           {proj: object-detection, board: AVH-SSE-300-U65},
           {proj: object-detection, board: AVH-SSE-310},
           {proj: object-detection, board: AVH-SSE-310-U55},
-          {proj: object-detection, board: AVH-SSE-310-U65},
+          {proj: object-detection, board: AVH-SSE-310-U65}
         ]
 
         build: [ 
