@@ -114,9 +114,9 @@ project:
       for-context:
         - +STM32F746-DISCO
 
-    - layer: ../device/alif-ensemble/alif-ensemble-E7-device.clayer.yml
-      for-context:
-        - +Alif-E7-M55-HE
+#   - layer: ../device/alif-ensemble/alif-ensemble-E7-device.clayer.yml
+#     for-context:
+#      - +Alif-E7-M55-HE
 
   components:
     - component: ARM::ML Eval Kit:Voice:Keyword spotting
