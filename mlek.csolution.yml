@@ -38,7 +38,7 @@ solution:
     - pack: NXP::FRDM-K64F_BSP@14.0.0
     - pack: NXP::MK64F12_DFP@14.0.0
     - pack: Keil::STM32F7xx_DFP@2.15.1
-    - pack: AlifSemiconductor::Ensemble@1.1.1
+#   - pack: AlifSemiconductor::Ensemble@1.1.1
 
   build-types:
     - type: Debug
@@ -80,19 +80,19 @@ solution:
       board: STMicroelectronics::STM32F746G-Discovery
       device: STM32F746NGHx
 
-    - type: Alif-E7-M55-HP
-      board: Alif Semiconductor::DevKit-E7
-      device: AE722F80F55D5LS:M55_HP
-      define:
-        - ETHOSU55
-        - USART_DRV_NUM: 2
+#   - type: Alif-E7-M55-HP
+#     board: Alif Semiconductor::DevKit-E7
+#     device: AE722F80F55D5LS:M55_HP
+#     define:
+#       - ETHOSU55
+#       - USART_DRV_NUM: 2
 
-    - type: Alif-E7-M55-HE
-      board: Alif Semiconductor::DevKit-E7
-      device: AE722F80F55D5LS:M55_HE
-      define:
-        - ETHOSU55
-        - USART_DRV_NUM: 4
+#   - type: Alif-E7-M55-HE
+#     board: Alif Semiconductor::DevKit-E7
+#     device: AE722F80F55D5LS:M55_HE
+#     define:
+#       - ETHOSU55
+#       - USART_DRV_NUM: 4
 
     # NOTE: Currently Keil Studio Cloud doesn't allow switching between different NPU configurations.
     #       Applications produced by this build will only work if the FVP is run manually.
