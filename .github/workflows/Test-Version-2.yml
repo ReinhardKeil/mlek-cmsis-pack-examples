@@ -25,4 +25,26 @@ jobs:
         uses: ARM-software/cmsis-actions/armlm@v1
 
       - name: Build projects
-        run:  cbuild mlek.csolution.yml --update-rte --packs
+        run:  cbuild mlek.csolution.yml --packs --context kws.Release+AVH-SSE-300-U55
+
+      - name: Upload Artifact without --update-rte
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: 
+          name: NoUpdateRTE
+          path: |
+            ./out
+          retention-days: 1
+          
+      - name: Build projects
+        if: always()
+        run:  cbuild mlek.csolution.yml --update-rte --packs --context kws.Release+AVH-SSE-300-U55
+
+      - name: Upload Artifact with --update-rte
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: 
+          name: UpdateRTE
+          path: |
+            ./out
+          retention-days: 1
