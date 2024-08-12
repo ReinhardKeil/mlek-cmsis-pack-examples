@@ -20,7 +20,6 @@ jobs:
           {proj: kws, board: AVH-SSE-310},
           {proj: kws, board: AVH-SSE-310-U55},
           {proj: kws, board: AVH-SSE-310-U65},
-          {proj: kws, board: Alif-E7-M55-HE},
           {proj: kws, board: FRDM-K64F},
           {proj: kws, board: STM32F746-DISCO},
 
@@ -30,7 +29,6 @@ jobs:
           {proj: object-detection, board: AVH-SSE-310},
           {proj: object-detection, board: AVH-SSE-310-U55},
           {proj: object-detection, board: AVH-SSE-310-U65},
-          {proj: object-detection, board: Alif-E7-M55-HP}
         ]
 
         build: [ 
@@ -46,14 +44,12 @@ jobs:
     steps:
       - name: Checkout mlek-cmsis-pack-examples
         uses: actions/checkout@v4
-        with:
-          repository: Evagan2018/mlek-cmsis-pack-examples
           path: ./
 
       - name: Install tools
         uses: ARM-software/cmsis-actions/vcpkg@v1
         with:
-          config: "./vcpkg-configuration.json"
+          config: ".ci/vcpkg-configuration.json"
 
       - name: Activate Arm tool license
         uses: ARM-software/cmsis-actions/armlm@v1
