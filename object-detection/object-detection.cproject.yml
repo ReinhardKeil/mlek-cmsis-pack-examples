@@ -65,8 +65,8 @@ project:
             - +AVH-SSE-310
             - +AVH-SSE-310-U55
             - +AVH-SSE-310-U65
-        - file: linker/alif-e7-m55-hp.sct
-          for-context: +Alif-E7-M55-HP
+#       - file: linker/alif-e7-m55-hp.sct
+#         for-context: +Alif-E7-M55-HP
 
 
   define:
@@ -84,9 +84,9 @@ project:
         - +AVH-SSE-310-U55
         - +AVH-SSE-310-U65
 
-    - layer: ../device/alif-ensemble/alif-ensemble-E7-device.clayer.yml
-      for-context:
-        - +Alif-E7-M55-HP
+#   - layer: ../device/alif-ensemble/alif-ensemble-E7-device.clayer.yml
+#     for-context:
+#       - +Alif-E7-M55-HP
 
   components:
     - component: ARM::ML Eval Kit:Vision:Object detection
