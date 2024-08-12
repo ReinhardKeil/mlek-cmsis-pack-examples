@@ -44,7 +44,6 @@ jobs:
     steps:
       - name: Checkout mlek-cmsis-pack-examples
         uses: actions/checkout@v4
-          path: ./
 
       - name: Install tools
         uses: ARM-software/cmsis-actions/vcpkg@v1
