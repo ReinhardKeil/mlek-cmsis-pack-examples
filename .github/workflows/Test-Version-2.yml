@@ -28,4 +28,4 @@ jobs:
         if: always()
         working-directory: ./
         run: |
-            cbuild mlek.csolution.yml --update-rte --packs --rebuild
+            cbuild mlek.csolution.yml --packs
