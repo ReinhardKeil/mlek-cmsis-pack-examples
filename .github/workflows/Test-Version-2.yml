@@ -25,4 +25,4 @@ jobs:
         uses: ARM-software/cmsis-actions/armlm@v1
 
       - name: Build projects
-        run:  cbuild mlek.csolution.yml --packs --rebuild
+        run:  cbuild mlek.csolution.yml --packs --rebuild --toolchain AC6
