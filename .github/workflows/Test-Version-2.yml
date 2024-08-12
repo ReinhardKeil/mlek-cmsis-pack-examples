@@ -33,9 +33,7 @@ jobs:
         with: 
           name: NoUpdateRTE
           path: |
-            ./out
-            ./tmp
-            ./RTE
+            ./
           retention-days: 1
           
       - name: Build projects
@@ -48,7 +46,5 @@ jobs:
         with: 
           name: UpdateRTE
           path: |
-            ./out
-            ./tmp
-            ./RTE
+            ./
           retention-days: 1
