@@ -12,9 +12,6 @@ jobs:
     steps:
       - name: Checkout mlek-cmsis-pack-examples
         uses: actions/checkout@v4
-        with:
-          repository: Evagan2018/mlek-cmsis-pack-examples
-          path: ./
 
       - name: Install tools
         uses: ARM-software/cmsis-actions/vcpkg@v1
