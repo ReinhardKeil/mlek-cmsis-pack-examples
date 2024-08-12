@@ -62,6 +62,5 @@ jobs:
         if: always()
         working-directory: ./
         run: |
-            cbuild mlek.csolution.yml --update-rte --packs \
-            --context ${{ matrix.target.proj }}.${{ matrix.build.type }}+${{ matrix.target.board }} \
-            --toolchain AC6 --rebuild
+            cbuild mlek.csolution.yml --packs \
+            --context ${{ matrix.target.proj }}.${{ matrix.build.type }}+${{ matrix.target.board }} 
