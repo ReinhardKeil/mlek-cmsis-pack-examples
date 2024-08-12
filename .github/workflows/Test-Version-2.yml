@@ -16,13 +16,10 @@ jobs:
       - name: Install tools
         uses: ARM-software/cmsis-actions/vcpkg@v1
         with:
-          config: "./vcpkg-configuration.json"
+          config: ".ci/vcpkg-configuration.json"
 
       - name: Activate Arm tool license
         uses: ARM-software/cmsis-actions/armlm@v1
 
       - name: Build projects
-        if: always()
-        working-directory: ./
-        run: |
-            cbuild mlek.csolution.yml --packs
+        run:  cbuild mlek.csolution.yml --packs
