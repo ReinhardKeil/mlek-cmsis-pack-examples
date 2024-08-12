@@ -1,12 +1,9 @@
-name: Test-Version-2   # BSP Examples
+name: Build Test
 on:
   workflow_dispatch:
 
 jobs:
-  Test-Examples:                     # Install tools, build 
-    strategy:
-      fail-fast: false
-
+  Test-Examples:
     runs-on: ubuntu-latest
 
     steps:
