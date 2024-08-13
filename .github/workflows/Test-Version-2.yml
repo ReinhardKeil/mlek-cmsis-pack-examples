@@ -38,7 +38,7 @@ jobs:
           
       - name: Build projects
         if: always()
-        run:  cbuild mlek.csolution.yml --update-rte --packs --context kws.Release+AVH-SSE-300-U55
+        run:  cbuild mlek.csolution.yml --update-rte --packs --context +AVH-SSE-300-U55
 
       - name: Upload Artifact with --update-rte
         if: always()
